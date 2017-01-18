@@ -193,7 +193,7 @@ Optimistic concurrency control makes an assumption that conflicts between transa
 ## Pessimistic transaction concurrency
 Pessimistic concurrency control locks objects when executing the transaction. This concurrency control often gives very negative performance hits.
 
-## Synchronous vs Asynchronous transactions
+## Synchronous vs Asynchronous transactions {#sync_vs_async}
 As was mentioned, Db.Transact performs blocking wait on IO and has non-blocking counterpart - Db.TransactAsync. The reason for this is to let application code means to know when transaction is secured and its safe for the application to cause any side-effects based on that fact. Blocking call to Db.Transact could be a problem depending on application design, throughput and latency requirements. In certain scenarios it's not that critical - Starcounter can automatically scale the number of working threads, so it will continue processing requests despite some handlers are blocked. Number of threads are limited by ```number_of_cpu*254```. If achieved throughput is not sufficient then handlers are to be redesigned to use Db.TransactAsync() instead of Db.Transact().
 
 Instead:

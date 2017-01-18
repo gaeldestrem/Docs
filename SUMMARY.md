@@ -137,3 +137,7 @@
     * [Cookie-based authentication](cookbook/cookie-based-authentication.md)
 
 * [Glossary](glossary/glossary.md)
+
+* [What's new](whatsnew/whatsnew.md)
+   * [What's new in 2.3](whatsnew/whatsnew_2_3.md)
+
