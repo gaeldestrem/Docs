@@ -4,8 +4,9 @@ Secure Socket Layer (SSL) is a protocol that offers security through encryption 
 
 The SSL protocol aims to provide solutions to two simple security problems:
 <ol>
-<li>Secure data transmission between the <code>client</code> and <code>NGINX</code>.</li>
-<li>Obtain proof that an involved party is the one we want to grant access to the encrypted data.</li></ol>
+    <li>Secure data transmission between the <code>client</code> and <code>NGINX</code>.</li>
+    <li>Obtain proof that an involved party is the one we want to grant access to the encrypted data.</li>
+</ol>
 
 All input traffic passes through SSL to <code>NGINX</code> in private and integral way, where it is being unwrapped and forwarded to the Starcounter server.
 
